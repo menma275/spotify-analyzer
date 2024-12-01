@@ -44,7 +44,9 @@ export default function MainSection() {
                   </Wrapper>
                 </div>
               </div>
-              {/* <div className="z-10 absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[var(--bg)] to-transparent pointer-events-none" /> */}
+              {/* <button className="absolute z-10 bottom-0 left-0 w-full pt-9 pb-3 text-sm font-bold text-[var(--accent)] bg-gradient-to-b from-transparent to-70% to-[var(--bg)] "> */}
+              {/*   Show more */}
+              {/* </button> */}
             </Container>
           </motion.div>
         ) : (

@@ -25,12 +25,8 @@ export default function Track({ name, artist, image, index, url }: TrackTile) {
         />
       </div>
       <div className="flex flex-col align-center justify-center overflow-hidden z-10">
-        <h1 className="font-bold text-md truncate ">{name}</h1>
-        {artist && (
-          <div className="flex flex-row gap-4 text-xs">
-            <p>{artist}</p>
-          </div>
-        )}
+        <h1 className="font-bold text-md truncate">{name}</h1>
+        {artist && <p className="text-xs truncate">{artist}</p>}
       </div>
     </a>
   );

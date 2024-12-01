@@ -25,7 +25,7 @@ export default function ShowTopTracks() {
   return (
     <Tracks>
       <SectionHeader title="Top Tracks">
-        <div className="flex gap-2">
+        <div className="flex gap-1">
           {["short_term", "medium_term", "long_term"].map((range) => (
             <label
               key={range}
