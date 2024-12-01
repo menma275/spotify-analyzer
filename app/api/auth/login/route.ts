@@ -27,7 +27,6 @@ export async function GET(req: Request) {
           }),
         });
         const data: SpotifyAuthApiResponse = await response.json();
-        console.log(data);
         const accessToken = data.access_token;
         cookieStore.set({
           name: "spotifyAccessToken",
@@ -40,8 +39,7 @@ export async function GET(req: Request) {
         });
         return NextResponse.redirect(new URL("/", req.url));
       } catch (error) {
-        console.log(error);
-        return NextResponse.error();
+        return NextResponse.json({ status: 500, error });
       }
     }
   } catch (error) {
