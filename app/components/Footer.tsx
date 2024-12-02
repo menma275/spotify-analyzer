@@ -19,6 +19,7 @@ export default function Footer() {
           <a
             className="hover:text-[var(--accent)]"
             href="https://www.sakamura.dev/"
+            target="_blank"
           >
             Kusuke Sakamura
           </a>
@@ -28,6 +29,7 @@ export default function Footer() {
           <a
             className="flex gap-1 items-center hover:text-[var(--accent)]"
             href="https://github.com/menma275/spotify-analyzer"
+            target="_blank"
           >
             <FaGithub />
             <span>GitHub</span>
