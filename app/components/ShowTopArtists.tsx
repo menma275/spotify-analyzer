@@ -15,7 +15,7 @@ export default function ShowTopArtists() {
   const { data } = useTopItems<TopArtist>({
     items: itemType,
     time_range: timeRange,
-    limit: 10,
+    limit: 50,
   });
 
   const handleTimeRangeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
