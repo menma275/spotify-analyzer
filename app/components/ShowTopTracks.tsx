@@ -15,7 +15,7 @@ export default function ShowTopTracks() {
   const { data } = useTopItems<TopTrack>({
     items: itemType,
     time_range: timeRange,
-    limit: 10,
+    limit: 50,
   });
 
   const handleTimeRangeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
