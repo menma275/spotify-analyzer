@@ -7,7 +7,7 @@ export async function GET() {
 
   const baseUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/me/player/recently-played`;
   const params = new URLSearchParams({
-    limit: "10",
+    limit: "50",
   });
   const url = `${baseUrl}?${params.toString()}`;
   console.log(url);
